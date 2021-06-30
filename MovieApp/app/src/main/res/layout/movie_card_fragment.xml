@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/textview_height"
+        android:layout_marginTop="@dimen/from_top"
+        android:layout_marginEnd="@dimen/from_end"
+        android:layout_marginStart="@dimen/from_start"
+        android:shadowColor="@color/teal_200"
+        android:text="@string/title_text"
+        android:textSize="@dimen/text_size"
+        />
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/textview_height"
+        android:layout_marginTop="@dimen/between_textviews"
+        android:layout_marginEnd="@dimen/from_end"
+        android:layout_marginStart="@dimen/from_start"
+        android:shadowColor="@color/teal_200"
+        android:text="@string/year_text"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/teal_700"
+    />
+
+
+    <TextView
+        android:id="@+id/overView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/overview_height"
+        android:layout_marginTop="@dimen/between_textviews"
+        android:layout_marginEnd="@dimen/from_end"
+        android:layout_marginStart="@dimen/from_start"
+        android:shadowColor="@color/teal_200"
+        android:text="@string/overview_text"
+        android:textSize="@dimen/text_size"
+        />
+
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/textview_height"
+        android:layout_marginTop="@dimen/between_textviews"
+        android:layout_marginEnd="@dimen/from_end"
+        android:layout_marginStart="@dimen/from_start"
+        android:shadowColor="@color/teal_200"
+        android:text="@string/rank_text"
+        android:textSize="@dimen/text_size"
+        />
+    <FrameLayout
+        android:id="@+id/loadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
